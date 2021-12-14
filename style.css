@@ -1,0 +1,156 @@
+@media (max-width: 600px) {
+	/*font*/
+	@font-face {
+		font-family: 'Satoshi';
+		src: url('./font/Satoshi-Regular.otf') format('woff2');
+		src: url('./font/Satoshi-Bold.otf') format('woff2');
+		src: url('./font/Satoshi-Medium.otf') format('woff2');
+	}
+	/**/
+	* {
+		padding: 0;
+		margin: 0;
+		box-sizing: border-box;
+		font-family: 'Satoshi';
+		color: #ffffff;
+	}
+	.main {
+		position: relative;
+		height: 100vh;
+		background: #121212 100%;
+	}
+	/**/
+	.setting {
+		position: absolute;
+		left: 90%;
+		right: 8.8%;
+		top: 10%;
+		bottom: 92.68%;
+		border-radius: 14px;
+	}
+
+	.trending {
+		position: relative;
+		top: 1rem;
+	}
+	.trend-txt {
+		position: relative;
+		padding-left: 14px;
+		color: #ffffff;
+		font-weight: bold;
+		font-size: 30px;
+	}
+	.box-container {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		overflow-x: auto;
+		width: auto;
+		top: 0.5rem;
+	}
+
+	::-webkit-scrollbar {
+		width: 6px;
+		background-color: transparent;
+	}
+
+	::-webkit-scrollbar-thumb {
+		background-color: transparent;
+	}
+	.box {
+		position: relative;
+		width: 291px;
+		height: 85px;
+		left: 14px;
+		top: 6px;
+		background: #181818;
+		border-radius: 2px;
+		margin: 5px;
+	}
+	.box-title {
+		position: relative;
+		width: 121px;
+		height: 32px;
+		left: 44px;
+		top: 23px;
+		font-family: 'Satoshi', sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 24px;
+		line-height: 32px;
+		color: #ffffff;
+	}
+	.box-wave {
+		position: relative;
+		object-fit: cover;
+		z-index: 1;
+		top: 16px;
+	}
+	.box-artist {
+		position: absolute;
+		width: 80px;
+		left: 180px;
+		top: 0;
+	}
+	.box-artist-spc {
+		position: absolute;
+		width: 110px;
+		left: 180px;
+		top: 0;
+	}
+	/**/
+	.content-title {
+		position: relative;
+		padding-left: 21px;
+		top: -0.5rem;
+		font-family: 'Satoshi', sans-serif;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 28px;
+		line-height: 32px;
+		color: #ffffff;
+	}
+	.content {
+		position: relative;
+		top: 3rem;
+	}
+	.content-container {
+		position: relative;
+		display: flex;
+		flex-direction: row;
+		overflow-x: auto;
+		width: auto;
+	}
+	.content-box {
+		position: relative;
+		width: 160px;
+		border-radius: 5px;
+		margin: 5px;
+		left: 14px;
+	}
+
+	/* Splash */
+	#splash {
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #121212;
+		height: 100vh;
+		width: 100%;
+		z-index: 2;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+		opacity: 1;
+		transition: opacity 1s;
+	}
+
+	#splash img {
+		width: 300px;
+	}
+
+	#splash.fade {
+		opacity: 0;
+	}
+}
